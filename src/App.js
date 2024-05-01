@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
-
+import ChatBestPrice from './services/ChatBestPrice';
+// import ChatGPT from './services/ChatGPT';
+import { setResponse } from './redux/slices/chatGptSlice';
+import { useDispatch, useSelector } from 'react-redux';
+// import {setToken ,setLoading} from "../../redux/slices/authSlice"
+// 
 function App() {
+  // const dispatch = useDispatch();
+  // const ans = useSelector((state) => state.chatGpt.response)
+  // dispatch(setResponse("thik ho vai"))
+  // console.log(ans)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <ChatGPT/> */}
+      App 
+      <ChatBestPrice/>
     </div>
   );
 }
